@@ -45,4 +45,4 @@ To run the application, you need to have Python installed on your system. Additi
 You can generate an executable file using PyInstaller with the following command:
 
 ```bash
-pyinstaller --onefile --noconsole --icon=icon.ico nume_script.py
+pyinstaller --onefile --noconsole --icon=yt-icon.ico '.\YT Video Downloader.py'  
