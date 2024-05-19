@@ -55,8 +55,10 @@ tk.Label(root, text="Enter YouTube URL:").pack(pady=5)
 url_entry = tk.Entry(root, width=50)
 url_entry.pack(pady=5)
 
-tk.Label(root, text="Enter Download Path:").pack(pady=5)
+# Set default path to the Downloads folder on Windows
+default_download_path = os.path.join(os.path.expanduser('~'), 'Downloads')
 path_entry = tk.Entry(root, width=50)
+path_entry.insert(0, default_download_path)  # Insert default path
 path_entry.pack(pady=5)
 
 download_button = tk.Button(root, text="Download", command=download_video)
